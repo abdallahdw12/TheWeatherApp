@@ -23,6 +23,7 @@ public class WeatherHttpClient {
             connection.connect();
             StringBuffer stringBuffer = new StringBuffer();
             inputStream = connection.getInputStream();
+            
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
             String line = null;
             while ((line=bufferedReader.readLine())!=null){
